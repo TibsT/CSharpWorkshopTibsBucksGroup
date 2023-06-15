@@ -1,4 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//==================
+//DAY 1
+//==================
+
+// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
 
@@ -60,3 +64,68 @@ double myDouble = 100.50;
 bool isRaining = true;
 
 //Console.WriteLine(isRaining);
+
+
+//==================
+//Day 2
+//==================
+
+//two variables that hold two numbers
+
+int num1 = 5;
+int num2 = 10;
+
+//use the addition operator on these two numbers
+
+int sum = num1 + num2;
+
+//print the sum to the console
+
+//Console.WriteLine(sum);
+string fancyoutputsum =  $"{num1} + {num2} = {sum}";
+Console.WriteLine(fancyoutputsum);
+
+//use the subtraction operator on these two numbers
+
+int difference = num1 - num2;
+
+//print the difference to the console
+
+string fancyoutputdifference = $"{num1} - {num2} = {difference}";
+Console.WriteLine(fancyoutputdifference);
+
+//use the multiply operator on these two numbers
+
+int multiply = num1 * num2;
+
+//print the multiplication to the console
+
+string fancyoutputmultiply = $"{num1} * {num2} = {multiply}";
+Console.WriteLine(fancyoutputmultiply);
+
+//use the divide operator on these two numbers
+
+int divide = num1 / num2;
+
+//print the quotinent to the console
+
+string fancyoutputdivide = $"{num1} / {num2} = {divide}";
+Console.WriteLine(fancyoutputdivide);
+
+////lets do the same thing with functions
+///
+
+int numberOneForFunctions = 5;
+int numberTwoForFunctions = 10;
+
+//Function Definition
+
+int AddTwoNumbers(int num1, int num2)
+{
+    int sum = num1 + num2;
+    return sum;
+}
+
+//Function Call
+
+int storeResultOfAddTwoNumbersFunctionCall = AddTwoNumbers(numberOneForFunctions, numberTwoForFunctions);
