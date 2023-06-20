@@ -217,14 +217,25 @@ int FunctionThatReturnsRandomNumber()
     return randomNumber;
 }
 
+int FunctionThatReturnsRandomNumber2(int lowerbound, int upperbound)
+{
+    Random random = new Random();
+    int randomNumber = random.Next(lowerbound, upperbound);
+    return randomNumber;
+}
+
 //function call
-//i simply want a random number, between 1 and 100
+//I simply want a random number, between 1 and 100
 
 int randomnumber = FunctionThatReturnsRandomNumber();
 string somerandomsentence = $"The random number is {randomnumber} between 1 and 100, no parameters are sent";
 
-//i want a random number betwen 500 and 800
+Console.WriteLine(somerandomsentence);
+
+//I want a random number between 500 and 800
 int lowerboundvalue = 500;
 int upperboundvalue = 800;
-//int randomnumber2 = FunctionThatReturnsRandomNumber(500, 800);
+int randomnumber2 = FunctionThatReturnsRandomNumber2(500, 800);
+string somerandomsentence2 = $"The random number is {randomnumber2} between {lowerboundvalue} anbd {upperboundvalue}";
 
+Console.WriteLine(somerandomsentence2);
