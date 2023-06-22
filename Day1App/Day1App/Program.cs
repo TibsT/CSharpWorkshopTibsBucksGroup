@@ -8,6 +8,8 @@
 
 //create a string variable
 
+using Day1App;
+
 string myName = "Sara";
 
 
@@ -239,3 +241,54 @@ int randomnumber2 = FunctionThatReturnsRandomNumber2(500, 800);
 string somerandomsentence2 = $"The random number is {randomnumber2} between {lowerboundvalue} anbd {upperboundvalue}";
 
 Console.WriteLine(somerandomsentence2);
+
+
+//==================
+//DAY 4
+//==================
+
+
+Movie firstmovie = new Movie();
+
+firstmovie.MovieTitle = "The Flash";
+firstmovie.MovieReleaseStatus = true;
+firstmovie.MovieReleaseYear = 2023;
+
+string firstmoviestuff = $"The name of the movie is {firstmovie.MovieTitle} and it is being released in {firstmovie.MovieReleaseYear} and current status of releasing is {firstmovie.MovieReleaseStatus}";
+
+Console.WriteLine(firstmoviestuff);
+
+Movie secondmovie = new Movie();
+
+secondmovie.MovieTitle = "Elemental";
+secondmovie.MovieReleaseStatus = false;
+secondmovie.MovieReleaseYear = 2023;
+
+string secondmoviestuff = $"The name of the movie is {secondmovie.MovieTitle} and it is being released in {secondmovie.MovieReleaseYear} and current status of releasing is {secondmovie.MovieReleaseStatus}";
+
+Console.WriteLine(secondmoviestuff);
+
+Movie thirdmovie = new Movie();
+
+thirdmovie.MovieTitle = "spiderman across the spiderverse";
+thirdmovie.MovieReleaseStatus = true;
+thirdmovie.MovieReleaseYear = 2023;
+
+string thirdmoviestuff = $"The name of the movie is {thirdmovie.MovieTitle} and it is being released in {thirdmovie.MovieReleaseYear} and current status of releasing is {thirdmovie.MovieReleaseStatus}";
+
+Console.WriteLine(thirdmoviestuff);
+
+
+//lets create a video game object with Minecraft
+
+VideoGame firstvideogame = new VideoGame();
+
+firstvideogame.NameOfVideoGame = "Minecraft";
+firstvideogame.GameReleaseYear = 2011;
+firstvideogame.TypeOfGame = "Open World, Sandbox";
+firstvideogame.TypeOfGamingDevice = "Every Platform";
+firstvideogame.OnlineOrOffline = true;
+
+string firstvideogamestuff = $"The name of the video game is {firstvideogame.NameOfVideoGame} and it was released in {firstvideogame.GameReleaseYear} and it is a {firstvideogame.TypeOfGame} game. It can be played on {firstvideogame.TypeOfGamingDevice} and the online status is {firstvideogame.OnlineOrOffline}.";
+
+Console.WriteLine(firstvideogamestuff);
